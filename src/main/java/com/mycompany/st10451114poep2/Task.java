@@ -27,25 +27,39 @@ public final class Task {
         this.devDetails = devDetails;
         this.duration = (int) duration;
         this.taskStatus = taskStatus;
-        this.taskNumber = (int) (Math.random() * 1000); // Generate random task number for example
+        this.taskNumber = (int) (Math.random() * 1000); 
         this.taskID = createTaskID();
     }
 
     // Getters and setters
-    public String getTaskName() { return taskName; }
-    public void setTaskName(String taskName) { this.taskName = taskName; }
-    public int getTaskNumber() { return taskNumber; }
-    public void setTaskNumber(int taskNumber) { this.taskNumber = taskNumber; }
-    public String getTaskDesc() { return taskDesc; }
-    public void setTaskDesc(String taskDesc) { this.taskDesc = taskDesc; }
-    public String getDevDetails() { return devDetails; }
-    public void setDevDetails(String devDetails) { this.devDetails = devDetails; }
-    public String getTaskID() { return taskID; }
-    public void setTaskID(String taskID) { this.taskID = taskID; }
-    public String getTaskStatus() { return taskStatus; }
-    public void setTaskStatus(String taskStatus) { this.taskStatus = taskStatus; }
-    public int getDuration() { return duration; }
-    public void setDuration(int duration) { this.duration = duration; }
+    public String getTaskName() { 
+        return taskName; }
+    public void setTaskName(String taskName) {
+        this.taskName = taskName; }
+    public int getTaskNumber() {
+        return taskNumber; }
+    public void setTaskNumber(int taskNumber) {
+        this.taskNumber = taskNumber; }
+    public String getTaskDesc() {
+        return taskDesc; }
+    public void setTaskDesc(String taskDesc){
+        this.taskDesc = taskDesc; }
+    public String getDevDetails() {
+        return devDetails; }
+    public void setDevDetails(String devDetails) {
+        this.devDetails = devDetails; }
+    public String getTaskID() {
+        return taskID; }
+    public void setTaskID(String taskID) {
+        this.taskID = taskID; }
+    public String getTaskStatus() {
+        return taskStatus; }
+    public void setTaskStatus(String taskStatus) {
+        this.taskStatus = taskStatus; }
+    public int getDuration() { 
+        return duration; }
+    public void setDuration(int duration) { 
+        this.duration = duration; }
 
     public String createTaskID() {
         return (taskName.substring(0, 2) + ":" + taskNumber + ":" + devDetails.substring(devDetails.length() - 3)).toUpperCase();
