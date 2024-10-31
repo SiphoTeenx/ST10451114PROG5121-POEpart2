@@ -18,6 +18,7 @@ public class ST10451114PoeP2 {
     public static void main(String[] args) {
         Scanner cs = new Scanner(System.in);
         Registration myRegistrationObj = new Registration();
+        //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
 
         // Username and password check
         boolean isUsernameValid = myRegistrationObj.checkUsername(cs);
